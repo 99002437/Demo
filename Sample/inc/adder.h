@@ -1,6 +1,3 @@
-#ifndef __ADDER_H__
-#define __ADDER_H__
+#define LINELENGTH 80
+#define SEPCHARS "* .,\"\n"
 
-int adder(int a, int b, int c);
-
-#endif
