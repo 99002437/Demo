@@ -1,12 +1,5 @@
-SRC = src/adder.c\
-main.c
+all:
+	gcc -std=c11 -Wall -Wextra -pedantic src/chatbot.c -o chat
 
-INC = -Iinc
-
-PROJECT_NAME = adder.exe
-
-$(PROJECT_NAME): $(SRC)
-	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
-
-run:$(PROJECT_NAME)
-	./${PROJECT_NAME}
+clean:
+	rm -rf *o chat
